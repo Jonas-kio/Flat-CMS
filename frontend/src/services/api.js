@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: '/api' })
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+
+const API = axios.create({ baseURL: `${BASE_URL}/api` })
 
 export const getPosts = () => API.get('/posts')
 export const getPostsAdmin = () => API.get('/posts/admin')
