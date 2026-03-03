@@ -1,11 +1,11 @@
 ---
 title: "¡Bienvenidos a PatitasSeguras!"
-date: "2026-03-01T10:00:00.000Z"
+date: "2026-03-02T10:00:00.000Z"
 status: "published"
 image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80"
 excerpt: "Estamos felices de abrir las puertas de nuestro refugio digital. Conoce nuestra historia y cómo puedes ayudar."
 category: "General"
-id: "demo-001"
+id: "001"
 ---
 
 ## Nuestro refugio abre sus puertas
