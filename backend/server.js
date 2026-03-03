@@ -25,12 +25,12 @@ if (!fs.existsSync(settingsPath)) {
     title: 'PatitasSeguras',
     description: 'Refugio de animales con amor y dedicación',
     email: 'contacto@patitasseguras.org',
-    phone: '+591 ',
-    address: 'Cochabamba, Bolivia',
+    phone: '+591 000-0000',
+    address: 'La Paz, Bolivia',
     facebook: '',
     instagram: '',
     heroTitle: 'Cada animal merece un hogar lleno de amor',
-    heroSubtitle: 'Adoptá, apadriná o donä. Juntos hacemos la diferencia.',
+    heroSubtitle: 'Adoptá, apadriná o doná. Juntos hacemos la diferencia.',
     heroImage: ''
   }, null, 2));
 }
@@ -39,14 +39,6 @@ if (!fs.existsSync(settingsPath)) {
 app.use('/api/posts', require('./routes/posts'));
 app.use('/api/media', require('./routes/media'));
 app.use('/api/settings', require('./routes/settings'));
-
-// Serve frontend in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
-  });
-}
 
 app.listen(PORT, () => {
   console.log(`🐾 PatitasSeguras backend corriendo en puerto ${PORT}`);
