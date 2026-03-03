@@ -4,7 +4,6 @@ dist/
 .env.local
 backend/uploads/*
 !backend/uploads/.gitkeep
-backend/content/posts/*.md
 !backend/content/posts/.gitkeep
 *.log
 .DS_Store
