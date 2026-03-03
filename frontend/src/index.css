@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    @apply font-sans text-gray-800 bg-white;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { @apply font-heading; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-600 hover:bg-primary-500 hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300;
+  }
+  .section-title {
+    @apply font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-4;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Quill editor styles */
+.ql-editor { min-height: 200px; font-size: 16px; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Hide scrollbar on mobile for carousels */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }

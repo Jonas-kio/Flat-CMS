@@ -1,0 +1,15 @@
+{
+  "name": "patitasseguras",
+  "version": "1.0.0",
+  "description": "Refugio de animales PatitasSeguras - Sitio web completo",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && cross-env NODE_ENV=production node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
